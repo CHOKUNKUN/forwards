@@ -36,12 +36,11 @@ $userData = $stmt->fetch(PDO::FETCH_ASSOC);
     <div class="container">
         <br>
         <div class="card" style="width: 80rem;">
-            <div class="card-body">
-
+            <div class="card-body"
                 <form action="../user/edit_pass.php" method="POST">
                     <div class="container">
                         <p class="fs-3">แก้ไขรหัสผ่าน</p>
-                        
+
                         <div class="row">
                             <div class="col">
                                 <label for="formGroupExampleInput" class="form-label">ชื่อผู้ใช้งาน</label>
@@ -75,14 +74,13 @@ $userData = $stmt->fetch(PDO::FETCH_ASSOC);
                                 <button type="POST" class="btn btn-primary rounded-pill">แก้ไขรหัสผ่าน</button>
                             </div>
                         </div>
-
                     </div>
                 </form>
             </div>
         </div>
     </div>
 
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>
