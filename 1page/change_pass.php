@@ -32,52 +32,48 @@ $userData = $stmt->fetch(PDO::FETCH_ASSOC);
     } ?>
 </head>
 
-
-
-
 <body style="background-color: #dfeefa;">
     <div class="container">
         <br>
         <div class="card" style="width: 80rem;">
-            <div class="card-body"
-                <form action="../user/edit_pass.php" method="POST">
-                    <div class="container">
-                        <p class="fs-3">แก้ไขรหัสผ่าน</p>
+            <div class="card-body" <form action="../user/edit_pass.php" method="POST">
+                <div class="container">
+                    <p class="fs-3">แก้ไขรหัสผ่าน</p>
 
-                        <div class="row">
-                            <div class="col">
-                                <label for="formGroupExampleInput" class="form-label">ชื่อผู้ใช้งาน</label>
-                                <input type="text" class="form-control" id="" disabled readonly value="<?php echo $userData['user_name'];  ?>">
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row">
-                            <div class="col">
-                                <label for="formGroupExampleInput" class="form-label">รหัสผ่านเดิม</label>
-                                <input type="password" class="form-control" id="user_password" name="user_password">
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row">
-                            <div class="col">
-                                <label for="formGroupExampleInput" class="form-label">รหัสผ่านใหม่</label>
-                                <input type="password" class="form-control" id="user_new_pass" name="user_new_pass">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <label for="formGroupExampleInput" class="form-label">ยืนยันรหัสผ่านใหม่</label>
-                                <input type="password" class="form-control" id="user_checkpass" name="user_checkpass">
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row text-end">
-                            <div class="col">
-                                <a href="change_pass.php" type="button" class="btn btn-danger rounded-pill">ยกเลิก</a>
-                                <button type="POST" class="btn btn-primary rounded-pill">แก้ไขรหัสผ่าน</button>
-                            </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="formGroupExampleInput" class="form-label">ชื่อผู้ใช้งาน</label>
+                            <input type="text" class="form-control" id="" disabled readonly value="<?php echo $userData['user_name'];  ?>">
                         </div>
                     </div>
+                    <br>
+                    <div class="row">
+                        <div class="col">
+                            <label for="formGroupExampleInput" class="form-label">รหัสผ่านเดิม</label>
+                            <input type="password" class="form-control" id="user_password" name="user_password">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col">
+                            <label for="formGroupExampleInput" class="form-label">รหัสผ่านใหม่</label>
+                            <input type="password" class="form-control" id="user_new_pass" name="user_new_pass">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="formGroupExampleInput" class="form-label">ยืนยันรหัสผ่านใหม่</label>
+                            <input type="password" class="form-control" id="user_checkpass" name="user_checkpass">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row text-end">
+                        <div class="col">
+                            <a href="change_pass.php" type="button" class="btn btn-danger rounded-pill">ยกเลิก</a>
+                            <button type="POST" class="btn btn-primary rounded-pill">แก้ไขรหัสผ่าน</button>
+                        </div>
+                    </div>
+                </div>
                 </form>
             </div>
         </div>
